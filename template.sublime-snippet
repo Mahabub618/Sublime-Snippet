@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+///==============================TEMPLATES===============================///
+
+long double PI = acosl(-1);
+bool compare_int(int a, int b){return (a>b);} //This function is use for descending order.
+bool compare_string (string a, string b){return a.size()<b.size();}
+bool compare_pair(const pair<int,int> &a,
+                    const pair<int,int> &b){if(a.second==b.second)return a.first<b.first; else return (a.second > b.second);}
+bool cmp(pair<string ,int > x , pair<string ,int > y){return (x.S < y.S);}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>templates</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

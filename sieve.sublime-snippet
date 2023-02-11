@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+bool flag[200005];veci prime;
+void sieve(){prime.pb(2);for(ll i=3; i*i<mx5; i+=2){if(flag[i]) continue;for(ll j=i*i; j<mx5; j+=i+i) flag[j]=true;}for(ll i=3; i<mx5; i+=2) if(!flag[i]) prime.pb(i);}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sieve</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
